@@ -25,29 +25,4 @@ image.thumbnail(size, Image.ANTIALIAS)
 
 image.save('test.jpg')
 
-'''
-def convert_heic_jpg(fp):
 
-        heif_file = pyheif.read(open(fp).read())
-        image = Image.frombytes(
-            heif_file.mode, 
-            heif_file.size, 
-            heif_file.data,
-            "raw",
-            heif_file.mode,
-            heif_file.stride,
-        )
-        buf = io.BytesIO()
-        image.save(buf, format="JPEG")
-        buf.seek(0)
-        return buf.getvalue()
-
-
-    def resize(fp, size):
-        image = Image.open(fp)
-        image.thumbnail(size, Image.ANTIALIAS)
-        buf = io.BytesIO()
-        image.save(buf)
-        buf.seek(0)
-        return buf.getvalue()
-'''
