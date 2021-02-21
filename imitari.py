@@ -21,6 +21,8 @@ image.save(buf, format="JPEG")
 
 image = Image.open(buf)
 
+size = (100,100)
+
 image.thumbnail(size, Image.ANTIALIAS)
 
 image.save('test.jpg')
