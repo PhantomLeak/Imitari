@@ -1,4 +1,4 @@
-# This is imitari, the code I wrote but was inevitably removed from for no reason at all...fun
+
 
 import pyheif
 from PIL import Image
